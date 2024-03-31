@@ -3,6 +3,13 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+var crsr = document.querySelector(".cursor")
+var main = document.querySelector(".main")
+document.addEventListener("mousemove",function(dets){
+    crsr.style.left = dets.x + 20+"px"
+    crsr.style.top = dets.y + 20+"px"
+})
+
 
 function page4Animation() {
     var elemC = document.querySelector("#elem-container")
@@ -55,6 +62,25 @@ function loaderAnimation() {
         loader.style.top = "-100%"
     }, 4200)
 }
+
+
+// function ValidateEmail(inputText)
+// {
+// var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+// if(inputText.value.match(mailformat))
+// {
+// alert("Valid email address!");
+// document.form1.text1.focus();
+// return true;
+// }
+// else
+// {
+// alert("You have entered an invalid email address!");
+// document.form1.text1.focus();
+// return false;
+// }
+// }
+
 
 swiperAnimation()
 page4Animation()
