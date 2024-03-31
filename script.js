@@ -3,13 +3,6 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-var crsr = document.querySelector(".cursor")
-var main = document.querySelector(".main")
-document.addEventListener("mousemove",function(dets){
-    crsr.style.left = dets.x + 20+"px"
-    crsr.style.top = dets.y + 20+"px"
-})
-
 
 function page4Animation() {
     var elemC = document.querySelector("#elem-container")
